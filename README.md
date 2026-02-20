@@ -1,4 +1,6 @@
 # Лабораторная работа №8. Введение в React + JSX
+<img width="819" height="321" alt="image" src="https://github.com/user-attachments/assets/1a0a2009-1df9-4703-8c4b-e5916fa74459" />
+
 
 ## Краткое объяснение теории
 
