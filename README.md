@@ -1,16 +1,21 @@
-# React + Vite
+# Лабораторная работа №8. Введение в React + JSX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Краткое объяснение теории
 
-Currently, two official plugins are available:
+### Что такое компонент, пропсы и состояние
+* **Компонент** — это основной строительный блок React-приложения. Это независимая, переиспользуемая часть интерфейса (функция или класс), которая возвращает разметку JSX.
+* **Пропсы (props)** — это входные данные, которые передаются в компонент извне (от родителя к ребенку). Они неизменяемы (read-only) внутри самого компонента.
+* **Состояние (state)** — это внутренние данные компонента, которые могут изменяться со временем (например, через хук `useState`). Когда состояние меняется, React автоматически перерисовывает компонент.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Какую часть кода помог написать ИИ
+ИИ был использован для:
+* Генерации базовой структуры компонентов.
+* Написания логики обработки событий (например, функций для изменения состояния).
+* Помощи в отладке ошибок при работе с JSX и путями файлов.
+* Написания стилей CSS для быстрого оформления интерфейса.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Что вы поняли о компонентном подходе
+Компонентный подход позволяет разделить сложный интерфейс на маленькие, логически завершенные части. Это значительно упрощает:
+1.  **Масштабируемость:** можно легко добавлять новые части, не ломая старые.
+2.  **Повторное использование:** один и тот же компонент (например, кнопку или карточку товара) можно использовать в разных частях проекта с разными данными.
+3.  **Читаемость кода:** вместо одного огромного HTML-файла мы работаем с набором маленьких и понятных файлов-компонентов.
